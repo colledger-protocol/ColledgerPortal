@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+
+.mainContainer {
+  width: 409px;
+  height: 448px;
+  flex-shrink: 0;
+  background-color: $text-color;
+  border-radius: 5%;
+  font-family: $font-family;
+  line-height: normal;
+  font-style: normal;
+  margin-right: 10%;
+}
+
+.cardDetails {
+  display: flex;
+  flex-direction: column;
+  padding-left: 4%;
+}
+.cardName {
+  color: #333545;
+  font-size: 33.298px;
+  font-weight: 700;
+  letter-spacing: 1.665px;
+  padding-bottom: 2%;
+}
+.cardDesignation {
+  color: #737373;
+  font-size: 14.02px;
+  font-weight: 300;
+  letter-spacing: 0.701px;
+}

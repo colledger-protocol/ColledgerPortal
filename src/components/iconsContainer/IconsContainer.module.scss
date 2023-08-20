@@ -1,0 +1,10 @@
+@import "../../styles/variables.scss";
+
+.icons {
+  @include contentCenter;
+  margin-top: 10px;
+  width: 100%;
+}
+.icons div {
+  padding: 0.8%;
+}

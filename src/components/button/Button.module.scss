@@ -1,0 +1,53 @@
+@import "../../styles/variables.scss";
+
+.buttonContainer {
+  width: 100%;
+  @include contentCenter;
+  padding: 0 $regularPadding;
+  height: 40px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  border-radius: 15px;
+}
+
+.filledButtonContainer {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #6a27ff;
+  &:hover {
+    // background-color: grey;
+    // border: 1px solid rgba(255, 255, 255, 0.20);
+    background: linear-gradient(90deg, #27e5ff 0%, #6a27ff 100%);
+    // transition-duration: 1.5s;
+  }
+  &:active {
+    z-index: 1;
+    background: linear-gradient(90deg, #27e5ff 0%, #6a27ff 100%);
+    // transition-duration: 1.5s;
+    // background-color: grey;
+    box-shadow: 0 0 0 1px $textWhite, 0 0 0 2.5px grey;
+  }
+}
+
+.filledDisabledButtonContainer {
+  cursor: not-allowed;
+  background-color: grey;
+  opacity: 0.2;
+  &:hover {
+    background-color: grey;
+    opacity: 0.2;
+  }
+  &:active {
+    z-index: 1;
+    background-color: grey;
+    opacity: 0.2;
+    box-shadow: none;
+  }
+}
+
+.filledButtonText {
+  font-weight: bold;
+  font-size: $mediumFont;
+  letter-spacing: 0.4px;
+  text-align: center;
+}

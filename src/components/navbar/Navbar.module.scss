@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.container {
+  width: 100%;
+  height: 89px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: rgb(20, 20, 31);
+  // background-color: rgba(52, 52, 54, 1);
+  // background-color: rgba(16,16,24,1);
+  transition: "all .5s ease";
+
+  .leftContainer {
+    display: flex;
+    align-items: center;
+    font-size: 21.056px;
+    font-weight: 700;
+    // letter-spacing: -0.159px;
+    .smallContent {
+      font-weight: 300;
+    }
+  }
+}
+.blackColor{
+  color: #1E1E1E;
+}
+.whiteColor{
+  color: #FFFFFF;
+}
+
+.maincontainer {
+  padding: 15px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.midContainer {
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+}
+.midContainer div:hover {
+  color: #07d2fb;
+  cursor: pointer;
+}
+.servicesHover {
+  color: #07d2fb;
+}
+.rightContainer {
+  width: 19%;
+  display: flex;
+  justify-content: space-between;
+}

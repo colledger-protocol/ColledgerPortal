@@ -1,0 +1,139 @@
+$ocircleSize: 400px;
+$circleSize: 180px;
+$logoSize: 60px;
+// $logoOffset: $ocircleSize / 2 - $logoSize / 2;
+
+.circularContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@keyframes revolve {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.outer2 {
+  position: relative;
+  width: $ocircleSize;
+  height: $ocircleSize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .outerCircle2 {
+    position: absolute;
+    width: $ocircleSize;
+    height: $ocircleSize;
+    // background: linear-gradient(
+    //   180deg,
+    //   rgba(106, 39, 255, 0.2) 0%,
+    //   rgba(39, 229, 255, 0) 100%
+    // );
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    animation: revolve 20s linear infinite;
+    transform: rotate(-45deg);
+
+    .logo {
+      position: absolute;
+      width: $logoSize;
+      height: $logoSize;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transform-origin: center;
+    }
+
+    .logo4 {
+      transform: rotate(0deg)
+        translateX(calc(#{$ocircleSize / 1.73 - $logoSize / 1.9}));
+    }
+    .logo5 {
+      transform: rotate(60deg)
+        translateX(calc(#{$ocircleSize / 1.73 - $logoSize / 1.9}));
+    }
+    .logo6 {
+      transform: rotate(120deg)
+        translateX(calc(#{$ocircleSize / 1.73 - $logoSize / 1.9}));
+    }
+    .logo7 {
+      transform: rotate(180deg)
+        translateX(calc(#{$ocircleSize / 1.73 - $logoSize / 1.9}));
+    }
+    .logo8 {
+      transform: rotate(240deg)
+        translateX(calc(#{$ocircleSize / 1.73 - $logoSize / 1.9}));
+    }
+    .logo9 {
+      transform: rotate(300deg)
+        translateX(calc(#{$ocircleSize / 1.73 - $logoSize / 1.9}));
+    }
+  }
+}
+
+.outer1 {
+  position: relative;
+  // left: 10px;
+  width: 280px;
+  height: 280px;
+  // border-radius: 307.236px;
+  background: linear-gradient(
+    180deg,
+    rgba(106, 39, 255, 0.2) 0%,
+    rgba(39, 229, 255, 0) 100%
+  );
+  animation: revolve 10s linear infinite;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  position: relative;
+  background: #fff;
+  width: $circleSize;
+  height: $circleSize;
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-45deg);
+
+  .logo {
+    position: absolute;
+    width: $logoSize;
+    height: $logoSize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform-origin: center;
+  }
+
+  .logo1 {
+    transform: rotate(0deg)
+      translateX(calc(#{$circleSize / 1.5 - $logoSize / 1.9}));
+  }
+
+  .logo2 {
+    transform: rotate(120deg)
+      translateX(calc(#{$circleSize / 1.5 - $logoSize / 1.9}));
+  }
+
+  .logo3 {
+    transform: rotate(240deg)
+      translateX(calc(#{$circleSize / 1.5 - $logoSize / 1.9}));
+  }
+}

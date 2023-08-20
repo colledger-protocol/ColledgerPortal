@@ -1,0 +1,97 @@
+////// Primary color from theme config //////
+$primaryColor: var(--primary-color);
+$secondaryColor: var(--secondary-color);
+$defaultColor: #000000;
+$buttonColor: var(--secondary-color);
+$buttonFontColor: #ffffff;
+$headerColor: #000000;
+$headerFontColor: #ffac33;
+
+//// Background
+$bgWhite: #fff;
+$bgGray: #ccc;
+$bgLtGray: #f5f5f5;
+$bgDkGray: #ddd;
+
+//// Text colors variables
+$textBlack: #000;
+$textPrimary: #000000;
+$textSecondary: #878787;
+$textTertiary: #999999;
+$textBlue: #068ad3;
+$textWhite: #fff;
+$textGrey: #c2c2c2;
+$textDkGray: #111111;
+$errorText: red;
+
+//// Font size
+$xSmallFont: 0.5rem; //8px
+$smallFont: 0.625rem; //10px;
+$regularFont: 0.75rem; //12px
+$mediumFont: 0.875rem; //14px
+$largeFont: 1rem; //16px
+$xlargeFont: 1.125rem; //18px
+$xxlargeFont: 1.5rem; //24px
+
+//// Font weight
+$normalWeight: 400;
+$mediumWeight: 700;
+$heavyWeight: 900;
+
+// Padding
+$xsmallPadding: 5px;
+$smallPadding: 10px;
+$regularPadding: 15px;
+$mediumPadding: 20px;
+$largePadding: 25px;
+
+//Margin
+$xsmallMargin: 5px;
+$smallMargin: 10px;
+$regularMargin: 15px;
+$mediumMargin: 20px;
+$largeMargin: 25px;
+
+$font-family: "Montserrat", sans-serif;
+$text-color: #fff;
+
+@mixin smallText {
+  text-align: center;
+  font-family: $font-family;
+  font-size: 55.066px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 87%; /* 47.907px */
+  letter-spacing: -0.439px;
+}
+
+@mixin bigText {
+  font-family: $font-family;
+  text-align: center;
+  font-size: 152px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 87%; /* 132.24px */
+  letter-spacing: 2px;
+}
+@mixin contentCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flexRowSpacebw {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@mixin outlinedButton {
+  border: 1px solid $buttonColor;
+  color: $buttonColor;
+  outline: none;
+  background: #ffffff;
+}
+@mixin solidButton {
+  background: $buttonColor;
+  color: $buttonFontColor;
+  outline: none;
+}
