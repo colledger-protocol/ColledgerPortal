@@ -8,7 +8,7 @@ const ProfileCard = () => {
     <div className={styles.mainContainer}>
       <div className={styles.card}>
         <div className={styles.cardImage}>
-          <img src={malelogo} />
+          <img src={malelogo} alt={"male-image"} />
         </div>
         <div className={styles.cardDetails}>
           <div className={styles.cardName}>Joy Kapur</div>
