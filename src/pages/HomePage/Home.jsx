@@ -50,7 +50,7 @@ export const GetStartedBtn = () => {
       <GoButton
         title="Get Started"
         customContainerStyle={{
-          width: "28%",
+          width: "130px",
           borderRadius: "40px",
         }}
       />

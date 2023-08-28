@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 .container {
-  width: 100%;
-  height: 89px;
+  width: 100vw;
+  height: 12.5vh;
   color: #fff;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -29,11 +29,11 @@
     }
   }
 }
-.blackColor{
-  color: #1E1E1E;
+.blackColor {
+  color: #1e1e1e;
 }
-.whiteColor{
-  color: #FFFFFF;
+.whiteColor {
+  color: #ffffff;
 }
 
 .maincontainer {
@@ -45,8 +45,9 @@
 
 .midContainer {
   display: flex;
-  width: 43%;
-  justify-content: space-between;
+  width: 45%;
+  margin-left: 1%;
+  justify-content: space-evenly;
 }
 .midContainer div:hover {
   color: #07d2fb;
@@ -56,7 +57,7 @@
   color: #07d2fb;
 }
 .rightContainer {
-  width: 230px;
+  width: 24%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
