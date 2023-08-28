@@ -65,8 +65,8 @@ const MidContainer = () => {
       <div className={styles.authenticate}>Authenticate.</div>
       <div className={styles.ascend}>Ascend.</div>
       <div className={styles.midText}>
-        Unleashing Your Achievements on the Blockchain. Empower Your Future with
-        Decentralized Credential Management!
+        Unleashing your achievements with decentralized
+        credential management system.
       </div>
       <GetStartedBtn />
     </div>
