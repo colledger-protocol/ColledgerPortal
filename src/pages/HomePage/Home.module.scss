@@ -34,25 +34,33 @@
   //   rgba(0, 0, 0, 0.8) 95%,
   //   rgba(39, 229, 255, 0.8) 95%
   // );
-  // background: linear-gradient(
-  //   90deg,
-  //   rgba(39, 229, 255, 0.8) -60%,
-  //   rgba(0, 0, 0, 0.8) 5%,
-  //   rgba(0, 0, 0, 0.8) 95%,
-  //   rgba(39, 229, 255, 0.8) 160%
-  // );
-  background: url(../../assets/images/Background1.png);
+  background: linear-gradient(
+    90deg,
+    rgba(39, 229, 255, 0.8) -60%,
+    rgba(0, 0, 0, 0.8) 5%,
+    rgba(0, 0, 0, 0.8) 95%,
+    rgba(39, 229, 255, 0.8) 160%
+  );
+  // background: url(../../assets/images/Background1.png);
   font-family: $font-family;
-  margin-top: 3%;
-  width: 100%;
+  margin-top: 4%;
+  // width: 90vw;
   height: 100vh;
+  width: 100%;
+
+}
+
+@mixin clipText {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .midContainer {
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 62%;
   margin: auto;
-  padding-top: 4%;
+  padding-top: 3%;
   .achieve {
     @include smallText;
     background: linear-gradient(
@@ -60,17 +68,13 @@
       rgba(244, 240, 236, 0.7) 0%,
       rgba(244, 240, 236, 0) 100%
     );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include clipText;
   }
 
   .authenticate {
     @include smallText;
     background: linear-gradient(180deg, #fff 0%, rgba(0, 0, 0, 0) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include clipText;
   }
 
   .ascend {
@@ -80,9 +84,7 @@
       rgba(39, 229, 255, 0.8) 0%,
       rgba(106, 39, 255, 0.8) 100%
     );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include clipText;
   }
   .midText {
     color: $text-color;
@@ -97,7 +99,7 @@
 }
 .btn {
   display: flex;
-  margin-top: 6%;
+  margin-top: 4%;
   justify-content: center;
 }
 
@@ -106,7 +108,7 @@
   line-height: normal;
   display: flex;
   justify-content: space-between;
-  width: 86%;
+  width: 90%;
   height: 20%;
   margin: auto;
   margin-top: 0.5%;
@@ -119,9 +121,11 @@
 
   .usersContainer {
     @include flexRowSpacebw;
+    justify-content: space-evenly;
     color: $text-color;
-    padding: 3%;
-    width: 39%;
+    width: 46%;
+    align-items: center;
+    margin: auto;
     .usersColumn {
       display: flex;
       flex-direction: column;
@@ -129,18 +133,17 @@
   }
 
   .spanLargetext {
-    font-size: 35px;
+    font-size: 2em;
     font-weight: 300;
     letter-spacing: -0.238px;
   }
   .spanSmalltext {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 300;
     letter-spacing: -0.238px;
-    width: 100%;
   }
   .numbers {
-    font-size: 50px;
+    font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
   }
@@ -177,21 +180,23 @@
 
 .secondContainer {
   background: url(../../assets/images/Background2.png);
-  width: 100%;
+  // width: 100vw;
   height: 100vh;
+  // width: 90vw;
+  width: 100%;
+
+
+
   color: $text-color;
   font-family: $font-family;
   .secondMainContainer {
     @include flexRowSpacebw;
-    width: 90%;
+    width: 100%;
     height: 100%;
     .leftContainer {
-      width: 30%;
-      padding-top: 18%;
-      padding-left: 10%;
-    }
-
-    .leftContainer {
+      width: 35%;
+      padding-top: 15%;
+      padding-left: 8%;
       opacity: 0;
       transform: translateX(-100%);
       animation: slideInFromLeft 1s ease forwards;
@@ -205,26 +210,33 @@
 
     .rightContainer {
       display: flex;
-      justify-content: space-between;
-      width: 33%;
-      margin-top: 4%;
+      justify-content: space-evenly;
+      width: 44%;
+      margin-top: 1%;
+      padding-left: 13%;
       .rightTopContainer {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        height: 63%;
-        margin-top: 25%;
+        justify-content: space-around;
         animation: slideInFromTop 0.5s ease forwards;
         opacity: 0;
+        height: 92%;
+        margin-top: 5%;
+        width: 37%;
       }
       .rightBottomContainer {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        height: 63%;
-        margin-top: 5%;
+        // justify-content: space-between;
+        // height: 63%;
+        // margin-top: 5%;
         animation: slideInFromBottom 0.5s ease forwards;
         opacity: 0;
+        justify-content: space-around;
+        opacity: 0;
+        height: 92%;
+        margin-top: 0%;
+        width: 37%;
       }
       .box {
         margin-top: 14%;
@@ -276,21 +288,27 @@
 
 .thirdContainer {
   background: url(../../assets/images/Background3.png);
-  width: 100%;
+  // width: 100vw;
+
+  // width: 90vw;
   height: 100vh;
+  width: 100%;
+
+
+
   color: $text-color;
   font-family: $font-family;
   .thirdMainContainer {
     @include flexRowSpacebw;
-    width: 95%;
+    width: 100%;
     height: 100%;
     margin: auto;
     .thirdLeftContainer {
-      width: 40%;
+      width: 50%;
     }
     .thirdRightContainer {
-      width: 40%;
-      margin-top: 15%;
+      width: 45%;
+      margin: auto;
       opacity: 0;
       transform: translateX(100%);
       animation: slideInFromRight 0.5s ease forwards;
@@ -317,8 +335,8 @@
 .fourthContainer {
   // background: url(../../assets/images/Background3.png);
   background: linear-gradient(139deg, #6a27ff 36.63%, #27e5ff 100%);
-  width: 100%;
   height: 100vh;
+  width: 100%;
   color: $text-color;
   font-family: $font-family;
   .fourthMainContainer {
@@ -327,7 +345,7 @@
     height: 100%;
     padding-top: 7%;
     .fourthLeftContainer {
-      width: 30%;
+      width: 42%;
       margin-left: 5%;
       padding-top: 5%;
       opacity: 0;
@@ -360,14 +378,14 @@
 
 .fifthContainer {
   background: #121315;
-  width: 100%;
   height: 100vh;
+  width: 100%;
   color: $text-color;
   font-family: $font-family;
   @include contentCenter;
   flex-direction: column;
   .footerContainer {
-    width: 27%;
+    width: 30%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -392,6 +410,7 @@
 .lastMainContainer {
   width: 70%;
   margin: auto;
+  margin-top: 5%;
 }
 .lastTopContainer {
   display: flex;
@@ -407,10 +426,10 @@
 }
 .lastMidContainer {
   @include flexRowSpacebw;
-  width: 60%;
+  width: 90%;
   margin: auto;
 }
-.lastMidContainer div:hover{
+.lastMidContainer div:hover {
   color: #07d2fb;
   cursor: pointer;
 }
